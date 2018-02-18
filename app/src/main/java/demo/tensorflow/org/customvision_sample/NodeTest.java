@@ -91,80 +91,108 @@ public class NodeTest {
     }
 
     // REQUEST RECIPES
-    public static void determinePossibleRecipes(boolean bacon, boolean bread, boolean eggs, boolean avocado, boolean banana, boolean chocolatechip, boolean oats, boolean cakemix, boolean oil, boolean noodles, boolean tomatosauce) {
-       if ((banana)){
-           Log.d(TAG, "BANANAAAAAAAAAAAAA ");
-       }
-        if ((bacon && bread) || (bacon && eggs) || (eggs && bread)) {
-            System.out.println("Why don't you cook scrambled eggs and bacon");
-            System.out.println("Ingredients for Scrambled Eggs & Bacon: ");
-            System.out.println("8 Bacon Slices");
-            System.out.println("8 Eggs");
-            System.out.println("Toast");
-            System.out.println("Salt & Pepper");
-
-            if (bacon == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some bacon!");
-            }
-            if (bread == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some bread!");
-            }
-            if (eggs == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some eggs!");
-            }
-        }
-        if (avocado || bread) {
-            System.out.println("Why don't you cook avocado toast");
-            System.out.println("Ingredients for Avocado Toast: ");
-            System.out.println("Bread");
-            System.out.println("Avocado");
-            System.out.println("Salt & Pepper");
-            if (bread == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some bread!");
-            }
-            if (avocado == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some avocados!");
-            }
-        }
-        if ((banana && chocolatechip) || (banana && oats) || (oats && chocolatechip)) {
-            System.out.println("Why don't you bake banana oat chocolate chip cookies");
-            if (banana == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some bananas!");
-            }
-            if (chocolatechip == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some chocolatechips!");
-            }
-            if (oats == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some oats!");
-            }
-
-        }
-        if (noodles || tomatosauce) {
-            System.out.println("Why don't you make pasta");
-            if (noodles == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some noodles!");
-            }
-            if (tomatosauce == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some tomato sauce!");
-            }
-        }
-        if ((cakemix && eggs) || (cakemix && oil) || (oil && eggs)) {
-            System.out.println("Why don't you bake a cake");
-            if (cakemix == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some cakemix!");
-            }
-            if (eggs == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some eggs!");
-            }
-            if (oil == false) {
-                System.out.println("You have almost everything for this recipe! Make sure to buy some oil!");
-            }
+   public static void determinePossibleRecipes(boolean bacon, boolean bread, boolean eggs, boolean avocado, boolean banana, boolean chocolatechip, boolean oats, boolean cakemix, boolean oil, boolean noodles, boolean tomatosauce) {
+        System.out.println("");
+        if ((bacon && bread) || (bacon && eggs) || (eggs && bread) || (avocado || bread) || (banana && chocolatechip) || (banana && oats) || (oats && chocolatechip) || (noodles || tomatosauce) || (cakemix && eggs) || (cakemix && oil) || (oil && eggs)) {
+                if ((bacon && bread) || (bacon && eggs) || (eggs && bread)) {
+                        System.out.println("Why don't you cook scrambled eggs and bacon");
+                        System.out.println("");
+                        System.out.println("Ingredients for Scrambled Eggs & Bacon: ");
+                        System.out.println("8 Bacon Slices");
+                        System.out.println("8 Eggs");
+                        System.out.println("Toast");
+                        System.out.println("Salt & Pepper");
+                        System.out.println("");
+                        if (bacon == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some bacon!");
+                        }
+                        if (bread == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some bread!");
+                        }
+                        if (eggs == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some eggs!");
+                        }
+                        System.out.println("");
+                        System.out.println("");
+                }
+                if (avocado || bread) {
+                        System.out.println("Why don't you cook avocado toast");
+                        System.out.println("");
+                        System.out.println("Ingredients for Avocado Toast: ");
+                        System.out.println("Bread");
+                        System.out.println("Avocado");
+                        System.out.println("Salt & Pepper");			
+                        if (bread == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some bread!");
+                        }
+                        if (avocado == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some avocados!");
+                        }
+                        System.out.println("");
+                        System.out.println("");
+                }
+                if ((banana && chocolatechip) || (banana && oats) || (oats && chocolatechip)) {
+                        System.out.println("Why don't you bake banana oat chocolate chip cookies");
+                        System.out.println("");
+                        System.out.println("Ingredients for Banana Oat Chocolate Cookies: ");
+                        System.out.println("Banana");
+                        System.out.println("Oats");
+                        System.out.println("Chocolate Chips");
+                        System.out.println("");
+                        if (banana == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some bananas!");
+                        }
+                        if (chocolatechip == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some chocolatechips!");
+                        }
+                        if (oats == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some oats!");
+                        }
+                        System.out.println("");
+                        System.out.println("");
+                }
+                if (noodles || tomatosauce) {
+                        System.out.println("Why don't you make pasta");
+                        System.out.println("");
+                        System.out.println("Ingredients for Pasta: ");
+                        System.out.println("Noodles");
+                        System.out.println("Tomato Sauce");
+                        System.out.println("");
+                        if (noodles == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some noodles!");
+                        }
+                        if (tomatosauce == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some tomato sauce!");
+                        }
+                        System.out.println("");
+                        System.out.println("");
+                }
+                if ((cakemix && eggs) || (cakemix && oil) || (oil && eggs)) {
+                        System.out.println("Why don't you bake a cake");
+                        System.out.println("");
+                        System.out.println("Ingredients for a Cake: ");
+                        System.out.println("Cake Mix");
+                        System.out.println("Oil");
+                        System.out.println("Eggs");	
+                        System.out.println("");
+                        if (cakemix == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some cakemix!");
+                        }
+                        if (eggs == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some eggs!");
+                        }
+                        if (oil == false) {
+                                System.out.println("You have almost everything for this recipe! Make sure to buy some oil!");
+                        }
+                        System.out.println("");
+                        System.out.println("");
+                }
         }
         else {
-            System.out.println("Please add more ingredients to your pantry!");
+                System.out.println("Please add more ingredients to your pantry!");
 
         }
-    }
+   }
 
 }
 
