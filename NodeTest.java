@@ -68,7 +68,7 @@ public class NodeTest {
 	}
 
 
-	// ADDS INGRIDENTS
+	// ADDS INGREDIENTS
 	public static void insert(String id) {
 		if (head == null) {
 			Node J = new Node(id);
