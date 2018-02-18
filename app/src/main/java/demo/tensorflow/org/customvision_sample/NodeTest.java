@@ -5,9 +5,6 @@ import android.util.Log;
 import java.util.Arrays;
 import java.util.Scanner;
 
-/**
- * Created by Emily on 2/18/2018.
- */
 import java.util.*;
         import java.util.Scanner;
 
@@ -22,7 +19,6 @@ public class NodeTest {
         Node scanned = head;
         Scanner input = new Scanner(a);
         String scannedIngredient = input.next();
-        //Node scannedIngredients = new Node();
         while (!scannedIngredient.equals("Quit")) {
             insert(scannedIngredient);
             System.out.println("Enter ingredient or 'Quit' to quit");
@@ -76,7 +72,8 @@ public class NodeTest {
         determinePossibleRecipes(bacon, bread, eggs, avocado, banana, chocolatechip, oats, cakemix, oil, noodles, tomatosauce);
 
     }
-
+        
+    // ADDS INGREDIENTS
     public static void insert(String id) {
         if (head == null) {
             Node J = new Node(id);
