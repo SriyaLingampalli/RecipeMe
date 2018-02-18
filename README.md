@@ -2,7 +2,7 @@
 Tree Hacks 2018:
 Team Members:
 Emily Bui,
-Shriya Lingampalli,
+Sriya Lingampalli,
 Steven Bucher
 
 We wanted to help people to stay healthy, use their food before it goes bad, and help learn how to cook!
